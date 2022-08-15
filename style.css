@@ -1,0 +1,258 @@
+html{
+    font-size: 62.5%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+}
+
+body {
+    font-family: 'Bai Jamjuree';
+    width: 100%;
+    background-image: url(/images/bg-header-desktop.png);
+    background-repeat: no-repeat;
+    text-align: center;
+font-size: 1.8rem;
+}
+
+header {
+    margin-bottom: 6%;
+    padding: 5% 24% 0%;
+}
+
+
+header p:nth-child(3) {
+    padding: 3%;
+}
+
+
+p{
+    padding: 4vh 0%;
+}
+
+button{
+    padding: 1.5% 2.5%;
+    margin: 1% 0.7% 6%;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    background-color: hsl(233, 100%, 69%);
+    color: #fff;
+}
+
+.Strong-Cyan {
+ background-color: hsl(171, 66%, 44%);   
+}
+.dark {
+    color: hsl(210, 10%, 33%);
+    font-size: 3rem;
+    font-weight: 600;
+    padding-bottom: 0%;
+}
+
+.light {
+    color: hsl(201, 11%, 66%);
+}
+
+.copy-right {
+color: hsl(171, 66%, 44%);
+}
+
+p.copy-right {
+    font-weight: 400;
+    font-size: 18rem;
+}
+
+.container {
+    margin-left: -3%;
+    display: flex;
+    justify-content: flex-end;
+}
+.computer {
+    margin-right: 8%;
+}
+.column {
+    flex-direction: column;
+}
+
+.column p {
+    font-size: 1.8rem;
+    margin-right: 20%;
+    text-align: left;
+}
+
+.first {
+    margin: 5% 25%;
+}
+
+.second {
+    margin: 2%;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.second div {
+    width: 30%;
+    flex-direction: column;
+}
+
+.photo img {
+    margin: 7% 4%;
+}
+
+.photo+div {
+    margin: 1% 25% 5%;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(248, 248, 248);
+    padding: 4vh 3vh;
+}
+
+footer .dark {
+    font-weight: 400;
+}
+
+span.copy-right {
+    font-size: 8rem;
+}
+
+footer p:nth-child(2) {
+    text-align: left;
+    font-size: 1.8rem;
+    margin-right: 15%;
+    display: grid;
+    grid-template-columns: 33fr 33fr 33fr;
+    grid-template-rows: 50fr 50fr;
+    grid-gap: 2%;
+    width: 36vw;
+}
+
+footer p:nth-child(2) * {
+    cursor: pointer;
+}
+
+footer p:nth-child(2) *:hover {
+    color: hsl(171, 66%, 44%);
+}
+
+footer p:last-child i {
+margin: 0% 0.6vw;
+cursor: pointer;
+}
+
+footer p:last-child i img:hover {
+    filter: invert(50%) sepia(358%) saturate(347%) hue-rotate(471deg) brightness(104%) contrast(97%);
+}
+
+@media screen and (max-width:1000px) {
+ body {
+    background-image: url(/images/bg-header-mobile.png) fill;
+  display: flex;
+  flex-direction: column;
+ }
+ 
+ header {
+    display: flex;
+    flex-direction: column;
+    padding: 5% 4% 0%;
+ }
+
+ header p:nth-child(3) {
+    padding: 5% 0% 10%;
+ }
+
+ button {
+    margin-right: 9%;
+    margin-left: 9%;
+    padding: 5% 2.5%;
+    border-radius: 4rem;
+ }
+ 
+ header button:nth-child(5) {
+    margin-bottom: 40%;
+ }
+
+ .container {
+    flex-direction: column;
+    margin: 2% 4%;
+    align-items: center;
+    text-align: center;
+ }
+
+ .computer {
+    margin-right: 0%;
+    margin-bottom: 10%;
+    width: 100%;
+ }
+
+
+.column p {
+    font-size: 1.8rem;
+    margin-right: 0%;
+    text-align: center;
+}
+
+.first {
+    margin: 40% 5% 12%;
+}
+
+.first+img {
+    margin-bottom: 25%;
+}
+
+.second {
+    flex-direction: column;
+    align-items: center;
+}
+
+.second div {
+    width: auto;
+    margin-top: 10%;
+}
+
+.photo {
+    display: flex;
+    flex-direction: column;
+    margin: 30% 30%;
+}
+
+.photo img {
+    margin: 25% 4%;
+}
+
+.photo+div {
+    margin: 1% 4% 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: 35%;
+    flex-direction: column;
+}
+
+footer p:nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    margin-right: 0;
+}
+
+footer p:nth-child(2) * {
+    margin: 10% 0%;
+    font-weight: 400;
+}
+
+footer p:last-child {
+    margin: 5% 0%;
+}
+
+}
